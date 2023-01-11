@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        * {
+            background-color: bisque;
+        }
+
+        .container {
+            border: solid 2px red;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .fruit {
+            border: solid 2px blue;
+            padding: 10px;
+            margin: 5px;
+
+
+        }
+
+        #fruit1 {
+            float: left;
+            width: 30%;
+            margin: 5px;
+        }
+        #glass {
+           float:right;
+            width: 30%;
+        }
+        #stationary {
+            /* float: right; */
+            clear: both;
+            width: 15%;
+            margin: 5px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <h1>float and clear tutorail</h1>
+    <h2 style="color: blue; text-align: center;">Font Family</h2>
+    <div class="container">
+        <div class="fruit" id="fruit1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima deleniti dicta,
+                temporibus ipsum eos aspernatur, similique aliquam molestiae, quia quisquam harum dolores voluptatum
+                saepe quod voluptate aperiam. Nulla, dicta.</p>
+
+        </div>
+        <div class="fruit" id="glass">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima deleniti dicta,
+                temporibus ipsum eos aspernatur, similique aliquam molestiae, quia quisquam harum dolores voluptatum
+                saepe quod voluptate aperiam. Nulla, dicta.</p>
+
+        </div>
+        <div class="fruit" id="stationary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima deleniti dicta,
+                temporibus ipsum eos aspernatur, similique aliquam molestiae, quia quisquam harum dolores voluptatum
+                saepe quod voluptate aperiam. Nulla, dicta.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

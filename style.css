@@ -1,0 +1,471 @@
+/* * {
+   background-color: rgb(202, 215, 224);
+} */
+/* s
+// id and selector
+// id : should be identified uniqely 
+// class : applied for group of elements 
+// css also follw top to bottom approach 
+// if any property is redefined thn it will consider only new 
+// it also follw to alphabetical order */
+
+/* 
+special selector
+>it is applied for all the para element of div */
+/* div p{
+    color: yellow;
+    background-color: skyblue;
+    text-align: center;
+} */
+
+/* // it is only applied for  all direct child of div 
+div > p{
+    color: yellow;
+    background-color: skyblue;
+    text-align: center;
+}
+*/
+/* 
+// It is applied when div is previous sibling of p of same parent 
+div + p{
+    color: yellow;
+    background-color: skyblue;
+    text-align: center;
+}
+*/
+/* for random image in body */
+body {
+    background: url(https://source.unsplash.com/random/1600x1900)no-repeat center center /cover;
+    quotes: initial;
+}
+
+.class1 {
+    color: red;
+    padding: 5px;
+}
+
+/*
+// we can add multiple classes 
+// eg class="calss1 calss2 class3 "
+ */
+#id1 {
+    color: blue;
+    background-color: rgb(106, 219, 148);
+    text-align: center;
+}
+
+input[type='text'] {
+    padding: 23px;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(135, 36, 188);
+}
+
+a[target] {
+    font-size: larger;
+    text-align: center;
+    color: yellow;
+}
+
+a[target='_self'] {
+    font-size: larger;
+    text-align: center;
+    color: rgb(86, 86, 59);
+}
+
+/* For applying 4th elelment of list */
+li:nth-child(4) {
+    background-color: yellow;
+}
+
+/* For applying for every 3rd element  */
+li:nth-child(3n+0) {
+    color: blue;
+}
+
+/* 
+// we can also group many elements */
+footer,
+span {
+    background-color: rgb(98, 88, 177);
+    text-align: center;
+}
+
+/* font-family */
+
+#font-family {
+    font-family: cursive;
+    color: rgb(96, 87, 25);
+    font-style: italic;
+    font-size: 1.6em;
+    /* parent ka 1.6 time big size */
+}
+
+/*display property
+// inline : capture only width of element 
+// block : capture whole width 
+// inline-block:for inline element we can contol in width of block 
+*/
+.item {
+    display: inline;
+    border: 2px solid red;
+    margin: 5px;
+    height: 20px;
+    text-align: center;
+    display: block;
+    display: inline-block;
+    width: 30%;
+}
+
+/* 
+// Position Property
+//
+1. relative : - element move with respect to its initial pasition
+2. absolute :- element fixed with respect to its parent element
+3. static :- fixed with respect to its parent element
+4. sticky :- 
+*/
+
+
+#item2 {
+    /* margin-top: 60px; */
+    top: 30px;
+    position: fixed;
+
+
+}
+
+#item3 {
+    /* margin-top: 60px; */
+    left: 30px;
+    position: sticky;
+}
+
+.item1 {
+    /* position: relative; */
+    display: inline-block;
+    border: 2px solid blue;
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.pos {
+    height: 300px;
+    width: 100%;
+    background-color: pink;
+}
+
+/*  visivility Property
+  :- hidden / visivel
+ z-index :- one colour over another colour
+ z-index : -1 means it will dominate by another color 
+  */
+
+/* 
+  font-size Property
+   1. em : eg 3em means it magnifies the element size 3 times from its parent element 
+   2. rem : eg 5rem means it changes html element 5 times  */
+
+.med {
+    /* height: 80px;
+    width: 80px; */
+    font-size: 70px;
+    border: solid green 2px;
+    text-align: center;
+    display: ;
+}
+
+@media (max-width:300px) {
+    #device1 {
+        display: block;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    #device2 {
+        display: block;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px) {
+    #device3 {
+        display: block;
+    }
+}
+
+.ite {
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.con {
+    height: 300px;
+    width: 100%;
+    border: solid gray 2px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+/* 
+   //flex grow and flex-shrink property
+   // it is applied on individual element not for whole class
+   // according to that items get shrink or grow 
+   flex-basis : for set height and width of individual element
+   // dhort property for flex basis 
+   flex:2(shrink) 2(grow) 330px(flex basis) 
+   */
+#it1 {
+    flex: 2 2 330px;
+}
+
+#it2 {
+    flex-basis: 200px;
+    -ms-flex-align: center;
+}
+
+
+/* 
+: box-shadow
+// syntex
+box-shadow: offset-x offset-y  blur-radious spread-radious color; */
+.con1 {
+    border: solid grey 2px;
+    margin: 2opx;
+    border-color: aliceblue;
+    display: flex;
+}
+
+.con2 {
+    padding: 20px;
+    border: solid red 2px;
+    margin: 23px;
+    display: flex;
+    /* box-shadow: 25px 30px 20px red; */
+    /* //here 20px is blur radious for element visivility*/
+
+    box-shadow: 25px 30px 20px 30px red;
+    /* here 30px is spread radious means how you want to spread the color around boxes */
+    background-color: aquamarine;
+}
+
+#box2 {
+    box-shadow: -10px -20px blue;
+
+}
+
+#shad {
+    text-shadow: 5px 8px rgb(201, 201, 75);
+}
+
+:root {
+    --primary-color: grey;
+    --sec-col: brown;
+    /* it can be used any where in css to replace the color by single change */
+    --max_height: 440px;
+    --max_height: 500px;
+    /* we can replace any thing using of that property */
+}
+
+.boxy {
+    --box-color: yellow;
+    /* it will be used to every place inside this boxy class where this variable is used */
+    border-color: beige;
+    border: solid red 2px;
+    margin: 10px;
+    background-color: var(--box-color);
+}
+
+.con3 {
+    border: solid 2px blue;
+    background-color: var(--sec-col);
+}
+
+.con4 {
+    border: solid 2px red;
+    background-color: blue;
+}
+
+.boxy2 {
+    border: solid 2px rgb(48, 48, 39);
+    background-color: yellow;
+    animation: Rohit 4s 2s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+#she {
+    color: blue;
+    text-align: center;
+}
+
+#me {
+    color: yellow;
+    text-align: center;
+}
+
+@keyframes Rohit {
+    from {
+        width: 100px;
+    }
+
+    to {
+        width: 800px;
+    }
+}
+
+/* Transition Property */
+
+#tra {
+    height: 80px;
+    width: 80px;
+    border: solid red 2px;
+    text-align: center;
+    margin: 30px;
+    transition: all 1s ease-out;
+}
+
+#tra:hover {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    font-size: larger;
+    border-radius: 15px;
+}
+
+
+//transform Property
+.con5 {
+    height: 600px;
+    width: 100%;
+    border: solid green 2px;
+
+}
+
+.box4 {
+    height: 120px;
+    width: 120px;
+    display: block;
+    border: solid 2px red;
+    background-color: yellow;
+    margin-left: 150px;
+    margin-top: 30px;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.box4:hover {
+    transform: rotate(360deg);
+
+}
+
+#bo2:hover {
+    transform: scale(3);
+}
+
+#bo3:hover {
+    transform: skew(45deg);
+}
+
+#bo4:hover {
+    transform: translate(100px, 100px);
+}
+
+.con6 {
+    height: 600px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    border: solid red 5px;
+    background-color: rgb(244, 234, 234);
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: repeat(4, ifr);
+    /* grid-gap: 1fr 1fr 1fr; */
+    /* grid-template-columns: 100px 200px 300px;
+    grid-template-columns: 1fr 3fr 2fr; */
+    /* grid-template-rows: 1fr 3fr ;
+    //we can also add in row gap using this property */
+    /* grid-gap: 3rem; */
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    /* // very useful for resposiveness of websites */
+}
+
+.grid {
+    /* height: 40px;
+    width: 40px;*/
+    padding: 10px;
+    margin: 10px; 
+    border: solid rgb(96, 30, 203) 2px;
+    background-color: rgb(211, 201, 12);
+    /* display: grid; */
+   
+    /* grid-gap: 1fr 1fr 1fr; */
+
+}
+
+.grid:first-child {
+    /* grid-column-end: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 3;
+    grid-row: 1/ span 2;
+    // these property is used to expand the row and coloumn
+}
+
+/* Media Query Property */
+.con7{
+    border: solid 2px red;
+    background-color: rgb(53, 53, 12);
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    display: grid;
+}
+
+.med{
+    height:auto;
+    width:auto;
+    border: solid 2px blue;
+    margin: 20px;
+    background-color: yellow;
+
+}
+@media  only screen and (max-width : 300px) {
+    body{
+        background-color:white;
+    }
+    
+}
+
+@media  only screen and (max-width : 300px) {
+    body{
+        background-color:white;
+    }
+    
+}
+
+@media  only screen and (max-width:550px) and (min-width : 300px) {
+    body{
+        background-color:white;
+    }
+    
+}
+
+@media  only screen and (max-width : 700px) and (min-width:550px) {
+    body{
+        background-color:white;
+    }
+    
+}

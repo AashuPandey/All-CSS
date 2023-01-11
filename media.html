@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con7 {
+            border: solid 2px red;
+            background-color: rgb(223, 223, 210);
+            margin: 20px;
+            width: 90%;
+            display: grid;
+        }
+
+        .med {
+            height: auto;
+            width: auto;
+            border: solid 2px blue;
+            margin: 20px;
+            background-color: yellow;
+
+        }
+
+        @media only screen and (max-width : 300px) {
+            body {
+                background-color: rgb(138, 90, 38);
+            }
+
+        }
+
+
+        @media only screen and (max-width : 300px) {
+            .con7 {
+                background-color: rgb(123, 69, 203);
+                grid-template-areas:
+                'nav nav nav nav '
+                'aside aside aside aside '
+                'section section section section '
+                'footer footer footer footer';
+            }
+            body{
+                background-color: white;
+            }
+            
+
+
+        }
+
+
+        @media only screen and (max-width:550px) and (min-width : 300px) {
+            body {
+                background-color: rgb(65, 194, 88);
+            }
+
+        }
+
+
+        @media only screen and (max-width : 700px) and (min-width:550px) {
+            .con7 {
+                background-color: rgb(49, 11, 11);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: blue; text-align: center;">Transform Property</h2>
+    <div class="con7">
+        <nav class="med">
+            HOME ABOUT CONTACAT US
+        </nav>
+        <aside class="med">
+            <h2>Know more about us</h2>
+        </aside>
+        <section class="med">
+            <h2>My Pleasure</h2>
+        </section>
+        <footer class="med">
+            More Information
+        </footer>
+    </div>
+
+</body>
+
+</html>
